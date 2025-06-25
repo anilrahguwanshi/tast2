@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+}
+#homepage{
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: 0px 10px 10px gray;
+    background-color: #ffffff;
+
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.rnav{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rnav p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+.rnav button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #000000;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#heading {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#heading h1 {
+    font-size: 50px;
+    line-height: 1;
+}
+#heading p {
+    width: 25%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+#btn button{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #000000;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#btn button:nth-child(2){
+    background-color: #d8d8d8;
+    color: #000000;
+}
+#photo img{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+#page{
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: 0px 10px 10px rgb(137, 137, 137);
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.nav h2 i{
+    color: aqua;
+    font-size: 30px;
+    transform: rotate(90deg);
+}
+.rnav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rnav p{
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.rnav p:nth-child(7) i{
+    font-size: 18px;
+    background-color: #e6e6e6;
+    padding: 8px;
+    border-radius: 30px;
+}
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+#content h1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+}
+#image {
+    width: 70%;
+    height: 200px;
+    display: flex;
+    margin: 80px 0px;
+}
+#image .img:nth-child(1){
+    width: 12%;
+    position: absolute;
+    height: 200px;
+    margin-top: 10px;
+    transform: rotate(-9deg);
+    background: url(https://i.pinimg.com/736x/e5/4b/5e/e54b5e2c3e1399b75b68b1a16270e0a7.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+#image .img:nth-child(2){
+    width: 12%;
+    position: absolute;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: -25px;
+    transform: rotate(-6deg);
+    background: url(https://i.pinimg.com/736x/0a/76/4e/0a764ec2d5ab1019b26cb6ea953c8f83.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.name{
+    position: absolute;
+    padding: 5px 12px;
+    border-radius: 30px;
+    margin-top: -60px;
+    margin-left: 40px;
+    background-color: rgb(27, 111, 255);
+}
+.arrow{
+    position: absolute;
+    margin-top: -29px;
+    margin-left: 60px;
+    border: 4px solid rgb(22, 107, 255);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+
+}
+#image .img:nth-child(3){
+    width: 12%;
+    position: absolute;
+    height: 200px;
+    margin-left: 19%;
+    margin-top: -13px;
+    transform: rotate(-4deg);
+    background: url(https://i.pinimg.com/236x/4b/3a/ba/4b3aba363443c12e8d47be1a32531280.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+#image .img:nth-child(4){
+    width: 12%;
+    position: absolute;
+    height: 200px;
+    margin-left: 28%;
+    margin-top: -25px;
+    background: url(https://inamnoori.wordpress.com/wp-content/uploads/2013/11/oggy_by_metalxx69-d2zjgut.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+#image .img:nth-child(5){
+    width: 12%;
+    position: absolute;
+    height: 200px;
+    margin-left: 38%;
+    margin-top: -13px;
+    transform: rotate(6deg);
+    background: url(https://i.pinimg.com/236x/f5/dc/12/f5dc1203d642daa78adff3043c8284e5.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+#image .img:nth-child(6){
+    width: 12%;
+    position: absolute;
+    height: 200px;
+    margin-left: 48%;
+    margin-top: 5px;
+    transform: rotate(12deg);
+    background: url(https://i.pinimg.com/236x/64/e9/5c/64e95c27d2b368906c7a804a1a1afa07.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;   
+}
+#image .img:nth-child(7){
+    width: 12%;
+    position: absolute;
+    height: 200px;
+    margin-left: 58%;
+    margin-top: -1px;
+    transform: rotate(12deg);
+    background: url(https://i.pinimg.com/736x/f3/2b/3a/f32b3aa99e9754f816a9738f7931d417.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+#content #image .img:nth-child(7) .name{
+    position: absolute;
+    padding: 5px 12px;
+    border-radius: 30px;
+    margin-top: -60px;
+    margin-left: 40px;
+    background-color: rgb(34, 136, 102);
+}
+#content #image .img:nth-child(7) .arrow{
+    position: absolute;
+    margin-top: -29px;
+    margin-left: 60px;
+    border: 4px solid  rgb(34, 136, 102);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+
+}
+#content p{
+    width: 35%;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+#btm button{
+    padding: 10px 20px;
+    margin: 10px 10px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+#btm button:nth-child(2){
+    background-color: rgb(144, 144, 144);
+    border: none;
+    color: black;
+}
+#newyork{
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: 0px 10px 10px gray;
+    background-color: #d3bbbb68;
+    text-align: center;
+
+}
+#topnew{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#topnew h4{
+    font-size: 18px;
+    padding-top: 40px;
+}
+#topnew p{
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 600;
+    color: silver;
+}
+#topnew h1{
+    font-size: 80px;
+    margin-top: 50px;
+    color: rgb(46, 46, 46);
+}
+#newimage{
+    position: relative;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    margin-top: 20px;
+}
+#newimage .newimg:nth-child(1){
+    width: 20%;
+    height: 150px;
+    position: absolute;
+    margin-left: 15%;
+    transform: rotate(6deg);
+    margin-top: 5px;
+    background: url(https://cdn.sanity.io/images/3vte03iz/production/ee628beb316f724fe5b6ef0dd2a119d6710ac2a2-3274x2048.png?auto=format&w=1500&h=938);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+#newimage .newimg:nth-child(2){
+    width: 20%;
+    height: 150px;
+    position: absolute;
+    margin-left: 30%;
+    transform: rotate(-3deg);
+    margin-top: -15px;
+    background: url(https://cdn.dribbble.com/userupload/15861836/file/original-50e50bfe900411c77f4d263daa7d352a.png?resize=1504x1100&vertical=center);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+#newimage .newimg:nth-child(3){
+    width: 20%;
+    height: 150px;
+    position: absolute;
+    margin-left: 48%;
+    transform: rotate(3deg);
+    margin-top: 15px;
+    background: url(https://i.pinimg.com/236x/82/76/07/82760739c2149c565ac40f5e50887bf3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+#newimage .newimg:nth-child(4){
+    width: 20%;
+    height: 150px;
+    position: absolute;
+    margin-left: 62%;
+    transform: rotate(-3deg);
+    margin-top: -15px;
+    background: url(https://www.sparktech.com.hk/wp-content/uploads/2025/01/original-eaf41d56b3b7cad64ab952e002519cae.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+#bottnew h1{
+   font-size: 80px;
+   line-height: 1;
+   color: silver;
+}
+#bottnew h4{
+    font-size: 18px;
+    margin-top: 20px;
+}
+#bottnew p{
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 600;
+    color: silver;
+}
+#trust{
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: 0px 10px 10px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#trust p{
+    font: 15px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+#trust h1{
+    font-size: 70px;
+}
+#truimage{
+    position: relative;
+    width: 60%;
+    height: 400px;
+    margin-top: 60px;
+    display: flex;
+}
+#truimage .truimg:nth-child(1){
+    width: 22%;
+    height: 200px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 20%;
+    transform: rotate(-5deg);
+    padding: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+#truimage .truimg:nth-child(1) p{
+    font-size: 10px;
+    padding: 20px 0;
+}
+#truimage .truimg:nth-child(1) i{
+    color: rgb(142, 150, 221);
+}
+#truimage .truimg:nth-child(1) h5{
+    width: 60px;
+    font-size: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+#truimage .truimg:nth-child(2){
+    width: 22%;
+    height: 200px;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 40px;
+    transform: rotate(8deg);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(229, 229, 229);
+    border-radius: 10px;
+}
+#truimage .truimg:nth-child(2) p{
+    font-size: 10px;
+    padding: 20px 0;
+}
+#truimage .truimg:nth-child(2) i{
+    color: rgb(142, 150, 221);
+}
+#truimage .truimg:nth-child(3){
+    width: 22%;
+    height: 200px;
+    position: absolute;
+    margin-left: 40%;
+    transform: rotate(-3deg);
+    padding: 20px;
+    color: white;
+    background-color:rgb(142, 150, 221);
+    border-radius: 10px;
+}
+#truimage .truimg:nth-child(3) p{
+    font-size: 10px;
+    padding: 20px 0;
+}
+#truimage .truimg:nth-child(3) i{
+    color: rgb(255, 255, 255);
+}
+#truimage .truimg:nth-child(4){
+    width: 22%;
+    height: 200px;
+    margin-top: 18%;
+    margin-left: 30%;
+    transform: rotate(5deg);
+    position: absolute;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+#truimage .truimg:nth-child(4) p{
+    font-size: 10px;
+    padding: 20px 0;
+}
+#truimage .truimg:nth-child(4) i{
+    color: rgb(142, 150, 221);
+}
+#truimage .truimg:nth-child(4) h5{
+    width: 50px;
+    font-size: 10px;
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+#truimage .truimg:nth-child(5){
+    width: 22%;
+    height: 200px;
+    margin-top: 15%;
+    margin-left: 51%;
+    transform: rotate(12deg);
+    position: absolute;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(161, 219, 99);
+    border-radius: 10px;
+}
+#truimage .truimg:nth-child(5) p{
+    font-size: 10px;
+    padding: 20px 0;
+}
+#truimage .truimg:nth-child(5) i{
+    color: rgb(0, 0, 0);
+}
+#truimage .truimg:nth-child(5) h5{
+    font-size: 10px;
+
+}
+#onestop{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+}
+#upone{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+#upone i{
+    font-size: 50px;
+    background: linear-gradient(to right, black , rgb(182, 130, 130));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+#downone{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#downone h1{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1;
+}
+#downone p{
+    font-size: 12px;
+    margin-top: 12px;
+    z-index: 2;
+}
+#downone button {
+    padding: 8px 15px;
+    z-index: 2;
+    margin-top: 10px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+#photone img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
